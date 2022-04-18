@@ -19,5 +19,7 @@ def opsd_prep(df):
     df.set_index('Date', inplace=True)
     df['month'] = df.index.month_name()
     df['year'] = df.index.year
+    df['Wind'].fillna(0, inplace=True)
+    df['Solar'].fillna(0, inplace=True)
     df['Wind+Solar'] = df['Wind'] + df['Solar']
     return df
