@@ -5,3 +5,5 @@ __pycache__
 *.csv
 *.xlsx
 acquire_lesson.ipynb
+explore_lesson.ipynb
+seasonal_decompose.png
